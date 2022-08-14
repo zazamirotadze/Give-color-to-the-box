@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react"
 function App() {
+  const [getInput, setGetInput] = useState("")
+  const handleClick = (event) => {
+    setGetInput(event.target.value)
+  }
+
+  const colorChanger = {
+    backgroundColor:getInput
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="box-div" style={colorChanger} >{getInput?<h1>{getInput}</h1>:<h1>Empty Value</h1>}</div>
+      <input 
+        autoFocus
+        placeholder="Add color element"
+        onChange={(event)=>handleClick(event)}
+      />
     </div>
   );
 }
