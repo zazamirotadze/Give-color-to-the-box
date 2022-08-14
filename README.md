@@ -2,5 +2,5 @@ live link (ლაივის ლინკი) - https://cheery-paprenjak-c9bae2
 
 
 
-it was a challange from one of the dave gray react cource. 
+it was a challange from one of the dave gray react course. 
 ეს დავალება იყო დეივ გრეის ერთ-ერთი რეაქტის კურსიდან. 
